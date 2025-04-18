@@ -18,6 +18,9 @@ cnn-transfer-learning-colab/
 │   ├── EfficientNetV2B3.ipynb
 │   ├── resnet50_model.ipynb
 │   └── vgg16_model.ipynb
+├── preprocessing/
+│   ├── convert_and_split_test.py
+│   └── convert_and_split_train.py
 ├── requirements.txt
 ├── main.cpp
 └── README.md
