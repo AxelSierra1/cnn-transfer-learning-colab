@@ -36,7 +36,28 @@ You can open each notebook directly in Colab. Each notebook is self-contained an
 - Evaluating performance
 
 ## Dataset
+This project uses histopathology image data for colon cancer classification:
 
+### Training & Validation
+- Dataset: NCT-CRC-HE-100K
+- Classes:
+    - 0_non_cancer
+    - 1_adenocarcinoma
+- Preprocessing (done locally):
+    - Converted .tif to .jpg
+    - Labeled and classified into binary classes
+    - Split into 80% training / 20% validation
+ 
+### Testing
+- Dataset: CRC-VAL-HE-7K
+- Classes:
+    - 0_non_cancer
+    - 1_adenocarcinoma
+- Preprocessing (done locally):
+    - Converted .tif to .jpg
+    - Labeled and classified into binary classes
+ 
+Note: The data preparation was done locally, not in Colab. The training and evaluation pipelines assume the dataset is already preprocessed and structured in image folders by class.
 
 ## Saving & Loading Models
 Trained models are saved in the .keras format. To avoid large files in version control, they are stored in google drive
